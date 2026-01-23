@@ -4,30 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insignia Xbox Live Info</title>
+    <title>OG Xbox Live Game Info/Features</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Original Xbox Live Multiplayer Info (Insignia supported games only)</h1>
-    <h2>**Work in progress** Last update: 2025-06-17</h2>
+    <h1 style="text-align: center;">OG Xbox Live Multiplayer Game Info/Features</h1>
+    <h2 style="text-align: center;">(Insignia supported games only)</h1>
+    <h2 style="text-align: center;">**Work in progress** Last update: 2026-01-23</h2>
     <h2>Legend</h2>
     <table border="1">
         <tr>
-            <td><strong>Join in Progress</strong></td>
+            <td><strong>Pre-game lobby</strong></td>
+            <td colspan="2">Supports a pre-game "waiting room" lobby before the match begins.</td>
+        </tr>
+        <tr>
+            <td><strong>Join in progress</strong></td>
             <td colspan="2">Supports joining a multiplayer lobby while the match is in progress, either as a spectator or player.</td>
         </tr>
         <tr>
             <td><strong>Max Players</strong></td>
-            <td colspan="2">Maximum player limit, according to game mode. Some games have increased player limit with a dedicated server, or support local guests to join.
+            <td colspan="2">Max online players allowed in a lobby according to game mode. Some games have increased player limit with a dedicated server.
             </td>
         </tr>
         <tr>
-            <td rowspan="4"><strong>Voice Chat Type</strong></td>
-            <td><strong>Global:</strong> Talk and listen to everyone in the lobby.</td>
-            <td rowspan="4">
-                Some games put all dead players and spectators in the same voice channel, separate from global or team channels.
-            </td>
+            <td rowspan="4"><strong>Communicator Chat Type</strong></td>
+            <td><strong>Global:</strong> Talk and listen to everyone in the match.</td>
+            <td rowspan="4">Only applies when a match in session, pre-game lobbies are always global. Some games put dead players and spectators in a seperate voice channel.</td>
         </tr>
         <tr>
             <td><strong>Team:</strong> Talk and listen to your teammates only.</td>
@@ -39,17 +42,21 @@
             <td><strong>Proximity:</strong> Talk and listen to players near you only.</td>
         </tr>
         <tr>
-            <td><strong>Port Forwarding</strong></td>
-            <td colspan="2">Although it is generally recommended to port forward your Xbox (Port 3074 UDP) for the best experience on Insignia, some games require it more than others.</td>
+            <td rowspan="2"><strong>NAT</strong></td>
+            <td><strong>NAT:1 Recommended: </strong>If you don't have Open NAT type (NAT:1), you might have issues joining or might block others from joining.</td>
+            <td rowspan="2">Open NAT type is highly recommended for all games, but some games are more strict with NAT than others.<br />NAT:1 / NT:1 = Open NAT Type<br />NAT:2 / NT:2 = Moderate NAT Type<br />NAT:3 / NT:3 = Strict NAT Type</td>
         </tr>
         <tr>
-            <td rowspan="2"><strong>DLC Price</strong></td>
-            <td><strong>Free:</strong> DLC for this game was free, and is now provided by Insignia.</td>
-            <td rowspan="2">Some games may have both free and paid DLC, Insignia will only be providing the free DLC.
+            <td><strong>NAT:1 Required: </strong>You <strong>MUST</strong> have Open NAT type (NAT:1) or else you will have issues joining, or you will block others from joining.</td>
+        </tr>
+        <tr>
+            <td rowspan="2"><strong>DLC</strong></td>
+            <td><strong>Free:</strong> Downloadable content was free and is provided by Insignia.</td>
+            <td rowspan="2">Some games have both free and paid DLC, Insignia will only be providing the free DLC.
             </td>
         </tr>
         <tr>
-            <td><strong><span style="color: red;">Paid:</span></strong> DLC for this game was paid, and will
+            <td><strong><span style="color: orange;">Paid:</span></strong> Downloadable content was paid, and will
                 <strong>not</strong> be provided by Insignia.</td>
         </tr>
         <tr>
@@ -61,7 +68,7 @@
         </tr>
         <tr>
             <td colspan="2"><strong><span style="color: red;">Bad:</span></strong> Very noticable lag, slow input delay,
-                frame delay, noticable host advantage. May be unplayable on higher pings.</td>
+                frame delay, noticable unfair host advantage. May be unplayable on higher pings.</td>
         </tr>
     </table>
     <br />
@@ -75,10 +82,10 @@
                     <th><strong>Join in progress</strong></th>
                     <th><strong>Game Modes</strong></th>
                     <th><strong>Max Players</strong></th>
-                    <th><strong>Voice Chat Type</strong></th>
+                    <th><strong>Communicator Chat Type</strong></th>
                     <th><strong>Dedicated Server</strong></th>
-                    <th><strong>Port Forwarding</strong></th>
-                    <th><strong>DLC Price</strong></th>
+                    <th><strong>NAT</strong></th>
+                    <th><strong>DLC</strong></th>
                     <th><strong>Netcode</strong></th>
                 </tr>
             </thead>
@@ -129,7 +136,7 @@
                     <td>Yes</td>
                     <td></td>
                     <td></td>
-                    <td>Good</td>
+                    <td></td>
                 </tr>
                 <tr bgcolor="#333333">
                     <td>Amped 2</td>
@@ -148,7 +155,7 @@
                     <td>No</td>
                     <td>Yes</td>
                     <td></td>
-                    <td></td>
+                    <td>8</td>
                     <td>Push-to-talk (White Button)</td>
                     <td></td>
                     <td></td>
@@ -215,7 +222,7 @@
                     <td rowspan="2">16</td>
                     <td>Global</td>
                     <td rowspan="2"></td>
-                    <td rowspan="2" style="color: orange;">Highly Recommended</td>
+                    <td rowspan="2" style="color: orange;">NAT:1 Required</td>
                     <td rowspan="2"></td>
                     <td rowspan="2"></td>
                 </tr>
@@ -231,7 +238,7 @@
                     <td rowspan="2">16</td>
                     <td>Global</td>
                     <td rowspan="2"></td>
-                    <td rowspan="2" style="color: orange;">Highly Recommended</td>
+                    <td rowspan="2" style="color: orange;">NAT:1 Required</td>
                     <td rowspan="2"></td>
                     <td rowspan="2"></td>
                 </tr>
@@ -247,7 +254,7 @@
                     <td>16</td>
                     <td>Proximity</td>
                     <td></td>
-                    <td style="color: orange;">Highly Recommended</td>
+                    <td style="color: orange;">NAT:1 Required</td>
                     <td></td>
                     <td></td>
                 </tr>
@@ -289,10 +296,10 @@
                 </tr>
                 <tr bgcolor="#333333">
                     <td>Chicago Enforcer</td>
+                    <td>No</td>
+                    <td>Yes</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>8</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -331,7 +338,7 @@
                     <td>16</td>
                     <td>Team</td>
                     <td></td>
-                    <td style="color: orange;">Highly Recommended</td>
+                    <td style="color: orange;">NAT:1 Required</td>
                     <td></td>
                     <td></td>
                 </tr>
@@ -355,7 +362,7 @@
                     <td>8</td>
                     <td>Global</td>
                     <td rowspan="2">Yes</td>
-                    <td rowspan="2">Recommended</td>
+                    <td rowspan="2"></td>
                     <td rowspan="2">Free</td>
                     <td rowspan="2"></td>
                 </tr>
@@ -384,7 +391,7 @@
                     <td rowspan="2">16</td>
                     <td>Global</td>
                     <td rowspan="2"></td>
-                    <td rowspan="2">Recommended</td>
+                    <td rowspan="2">NAT:1 Recommended</td>
                     <td rowspan="2">Free</td>
                     <td rowspan="2"></td>
                 </tr>
@@ -436,9 +443,9 @@
                     <td>16</td>
                     <td>Push-to-talk (Right D-pad)</td>
                     <td></td>
-                    <td style="color: orange;">Highly Recommended</td>
+                    <td style="color: orange;">NAT:1 Required</td>
                     <td></td>
-                    <td>Good</td>
+                    <td></td>
                 </tr>
                 <tr bgcolor="#333333">
                     <td>Dead or Alive Ultimate</td>
@@ -533,7 +540,7 @@
                     <td>Yes</td>
                     <td>No</td>
                     <td>Exhibition, Amateur, Rookie, Pro, All-Star, Hall of Famer, Mini Rink, Skills</td>
-                    <td>2 (+6 Guests)</td>
+                    <td>2</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -555,26 +562,26 @@
                 <tr>
                     <td>Far Cry Instincts</td>
                     <td>Yes</td>
-                    <td>Yes (unranked)</td>
+                    <td>Yes (unranked mode only)</td>
                     <td></td>
                     <td>16</td>
                     <td></td>
                     <td>Yes</td>
                     <td></td>
                     <td></td>
-                    <td>Good</td>
+                    <td></td>
                 </tr>
                 <tr bgcolor="#333333">
                     <td>Far Cry Instincts Evolution</td>
                     <td>Yes</td>
-                    <td>Yes (unranked)</td>
+                    <td>Yes (unranked mode only)</td>
                     <td></td>
                     <td>16</td>
                     <td></td>
                     <td>Yes</td>
                     <td></td>
                     <td></td>
-                    <td>Good</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Forza Motorsport</td>
@@ -584,7 +591,7 @@
                     <td>8</td>
                     <td>Global</td>
                     <td></td>
-                    <td>Recommended</td>
+                    <td>NAT:1 Recommended</td>
                     <td></td>
                     <td></td>
                 </tr>
@@ -602,9 +609,9 @@
                 </tr>
                 <tr>
                     <td>Godzilla: Save the Earth</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>FFA</td>
                     <td>4</td>
                     <td></td>
                     <td></td>
@@ -616,11 +623,11 @@
                     <td>Greg Hastings&#39; Tournament Paintball</td>
                     <td>Yes</td>
                     <td></td>
+                    <td>Team Elimination, Capture the Flag, Single Flag</td>
+                    <td>14</td>
+                    <td>Team</td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>NAT:1 Recommended</td>
                     <td></td>
                     <td></td>
                 </tr>
@@ -634,7 +641,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td style="color: red;">Bad</td>
+                    <td></td>
                 </tr>
                 <tr bgcolor="#333333">
                     <td>Guilty Gear X2 #Reload: The Midnight Carnival</td>
@@ -646,7 +653,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td style="color: red;">Bad</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>GunGriffon: Allied Strike</td>
@@ -668,9 +675,9 @@
                     <td>2</td>
                     <td>Proximity</td>
                     <td rowspan="5">No</td>
-                    <td rowspan="5">Recommended</td>
+                    <td rowspan="5">NAT:1 Recommended</td>
                     <td rowspan="5">Free</td>
-                    <td rowspan="5">Good</td>
+                    <td rowspan="5"></td>
                 </tr>
                 <tr bgcolor="#333333">
                     <td>Double Team</td>
@@ -759,8 +766,8 @@
                     <td rowspan="2">8</td>
                     <td>Global</td>
                     <td rowspan="2"></td>
-                    <td rowspan="2">Recommended</td>
-                    <td rowspan="2">12 free, <span style="color: red;">1 paid</span></td>
+                    <td rowspan="2">NAT:1 Recommended</td>
+                    <td rowspan="2"></td>
                     <td rowspan="2"></td>
                 </tr>
                 <tr bgcolor="#333333">
@@ -835,7 +842,7 @@
                     <td>8</td>
                     <td>Global</td>
                     <td></td>
-                    <td>Recommended</td>
+                    <td>NAT:1 Recommended</td>
                     <td>Free</td>
                     <td></td>
                 </tr>
@@ -938,7 +945,7 @@
                 <tr>
                     <td>OutRun 2</td>
                     <td>Yes</td>
-                    <td></td>
+                    <td>Yes</td>
                     <td></td>
                     <td>8</td>
                     <td>Global</td>
@@ -1021,8 +1028,8 @@
                 </tr>
                 <tr bgcolor="#333333">
                     <td>Pro Fishing Challenge</td>
-                    <td></td>
-                    <td></td>
+                    <td>No</td>
+                    <td>Yes</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -1039,9 +1046,9 @@
                     <td>8</td>
                     <td>Global</td>
                     <td></td>
-                    <td style="color: orange;">Highly Recommended</td>
-                    <td style="color: red;">Paid</td>
-                    <td style="color: orange;">Ok</td>
+                    <td>NAT:1 Recommended</td>
+                    <td style="color: orange;">Paid</td>
+                    <td></td>
                 </tr>
                 <tr bgcolor="#333333">
                     <td>RalliSport Challenge 2</td>
@@ -1116,7 +1123,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td style="color: red;">Bad</td>
+                    <td></td>
                 </tr>
                 <tr bgcolor="#333333">
                     <td rowspan="3">Sega GT Online</td>
@@ -1160,7 +1167,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                    <td>2</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -1217,11 +1224,11 @@
                 </tr>
                 <tr>
                     <td>Star Wars: Battlefront</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Conquest, CTF</td>
                     <td>32</td>
-                    <td></td>
+                    <td>Team</td>
                     <td>Yes</td>
                     <td></td>
                     <td>Free</td>
@@ -1236,7 +1243,7 @@
                     <td>Team</td>
                     <td>Yes</td>
                     <td></td>
-                    <td>1 free, <span style="color: red;">1 paid</span></td>
+                    <td>1 free, <span style="color: orange;">1 paid</span></td>
                     <td></td>
                 </tr>
                 <tr>
@@ -1244,7 +1251,7 @@
                     <td>No</td>
                     <td>Yes</td>
                     <td></td>
-                    <td></td>
+                    <td>8 (16 Dedicated)</td>
                     <td></td>
                     <td>Yes</td>
                     <td></td>
@@ -1264,16 +1271,24 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Star Wars: The Clone Wars</td>
-                    <td>Yes</td>
-                    <td>No</td>
-                    <td>FFA, Conquest, Control Zone, Academy</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td rowspan="3">Star Wars: The Clone Wars</td>
+                    <td rowspan="3">Yes</td>
+                    <td rowspan="3">No</td>
+                    <td>Conquest, Team Duel, Team Control Zone</td>
+                    <td rowspan="2">8</td>
+                    <td>Team</td>
+                    <td rowspan="3"></td>
+                    <td rowspan="3"></td>
+                    <td rowspan="3">Free</td>
+                    <td rowspan="3"></td>
+                </tr>
+                <tr>
+                    <td>Duel, Control Zone</td>
+                    <td rowspan="2">Global</td>
+                </tr>
+                <tr>
+                    <td>Academy (Co-op)</td>
+                    <td>4</td>
                 </tr>
                 <tr bgcolor="#333333">
                     <td>Steel Battalion: Line of Contact</td>
@@ -1345,11 +1360,11 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td style="color: red;">Bad</td>
+                    <td></td>
                 </tr>
                 <tr bgcolor="#333333">
                     <td>Tetris Worlds Online</td>
-                    <td></td>
+                    <td>Yes</td>
                     <td></td>
                     <td></td>
                     <td>4</td>
@@ -1416,7 +1431,7 @@
                     <td>4</td>
                     <td>Global</td>
                     <td rowspan="3">Yes</td>
-                    <td rowspan="3">Recommended</td>
+                    <td rowspan="3">NAT:1 Recommended</td>
                     <td rowspan="3">Free</td>
                     <td rowspan="3" style="color: orange;">Ok</td>
                 </tr>
@@ -1479,10 +1494,10 @@
                 </tr>
                 <tr>
                     <td>Trivial Pursuit: Unhinged</td>
+                    <td>Yes</td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>4</td>
                     <td></td>
                     <td></td>
                     <td></td>
